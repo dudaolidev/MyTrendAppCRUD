@@ -1,0 +1,26 @@
+<!-- include header-->
+<%- include('include/_header.ejs')%>
+<!-- include header-->
+
+<body>
+    <h2>Detalhes do Parceiro</h2>
+    <p><strong>Nome:</strong> <%= user.name %></p>
+    <p><strong>Endereço:</strong> <%= user.address %></p>
+    <p><strong>Cidade:</strong> <%= user.city %></p>
+    <p><strong>Estado:</strong> <%= user.state %></p>
+    <p><strong>CEP:</strong> <%= user.zip %></p>
+    <p><strong>País:</strong> <%= user.country %></p>
+    <p><strong>Telefone:</strong> <%= user.phone %></p>
+    <p><strong>Email:</strong> <%= user.email %></p>
+    <p><strong>Website:</strong> <%= user.website %></p>
+    <p><strong>Categorias:</strong> <%= user.categories.join(", ") %></p>
+    <p><strong>Marcas:</strong> <%= user.brands.join(", ") %></p>
+    <p><strong>Avaliação:</strong> <%= user.rating %></p>
+    <p><strong>Total de Avaliações:</strong> <%= user.total_reviews %></p>
+    <p><strong>Parceiro Verificado:</strong> <%= user.is_verified_partner ? "Sim" : "Não" %></p>
+    <a href="/">Voltar</a>
+</body>
+
+<!-- include footer -->
+<%- include('include/_footer') %>
+<!-- /include footer -->
